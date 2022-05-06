@@ -102,6 +102,7 @@ document.addEventListener('dal-init-function', function () {
             ajax: ajax,
             with: null,
             tags: use_tags,
+            dropdownParent: $($element.attr('dropdownParent') || 'body'),
         });
 
         $element.on('select2:selecting', function (e) {
